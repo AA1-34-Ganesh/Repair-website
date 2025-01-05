@@ -1,5 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Header from './header';
+import '../css/bootstrap.css';
+import '../css/style.css';
+import '../css/responsive.css';
 import s1 from '../images/s1.png';
 import s2 from '../images/s2.png';
 import s3 from '../images/s3.png';
@@ -7,68 +11,11 @@ import s3 from '../images/s3.png';
 const Service = () => {
   return (
     <div className="hero_area">
-      {/* header section starts */}
-      <header className="header_section">
-        <div className="header_top">
-          <div className="container-fluid">
-            <div className="contact_nav">
-              <a href="tel:+918790085745">
-                <i className="fa fa-phone" aria-hidden="true"></i>
-                <span>Call : +91 8790085745</span>
-              </a>
-              <a href="mailto:demo@gmail.com">
-                <i className="fa fa-envelope" aria-hidden="true"></i>
-                <span>Email : kagugya9@gmail.com</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="header_bottom">
-          <div className="container-fluid">
-            <nav className="navbar navbar-expand-lg custom_nav-container">
-              <Link className="navbar-brand" to="/">
-                <span>Inance</span>
-              </Link>
-              <button
-                className="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span className="navbar-toggler-icon"></span>
-              </button>
-              <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="navbar-nav">
-                  <li className="nav-item">
-                    <Link className="nav-link" to="/">
-                      Home <span className="sr-only">(current)</span>
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="nav-link" to="/about1">
-                      About
-                    </Link>
-                  </li>
-                  <li className="nav-item active">
-                    <Link className="nav-link" to="/service">
-                      Services
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="nav-link" to="/contact">
-                      Contact Us
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-        </div>
-      </header>
-      {/* end header section */}
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      <Header />
 
       {/* service section */}
       <section className="service_section layout_padding">
@@ -139,10 +86,7 @@ const Service = () => {
       {/* end service section */}
 
       {/* info section */}
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-      />
+
       <section className="info_section">
         <div className="container">
           <h4>Get In Touch</h4>
